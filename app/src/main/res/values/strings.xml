@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BAYAR ID</string>
+
+    <string name="base_url">http://192.168.43.92:5000</string>
+
+    <string name="str_saldo_total">Saldo Total</string>
+    <string name="str_deskripsi_logo_saldo">Logo saldo</string>
+
+    <string name="prefix_no_hp">62</string>
+
+    <string name="txtHeaderLogin">Masuk Akun</string>
+    <string name="txtHeaderRegister">Daftar Akun</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtNama">Nama</string>
+    <string name="txtNoHp">No. Handphone</string>
+    <string name="txtPassword">Kata Sandi</string>
+    <string name="txtJudulBelumPunyaAkun">Belum punya akun?</string>
+    <string name="txtLinkRegister"><u>Buat akun</u></string>
+    <string name="txtSudahPunyaAkun">Sudah punya akun?</string>
+    <string name="txtLinkLogin"><u>Silahkan masuk</u></string>
+    <string name="txtGantiPassword">Ganti Kata Sandi</string>
+    <string name="txtNominalPulsa">Nominal Pulsa</string>
+    <string name="deskripsiPendaftaranSuara">
+        BAYAR ID menggunakan sistem Voice Authentication untuk mengautentikasi pembayaran Anda.
+    </string>
+    <string name="deskripsiPendaftaraSuara1">
+        Mohon rekam setiap digit angka 1 sampai 9 dalam durasi yang ditentukan.
+    </string>
+    <string name="deskripsiTentangPembuat">Aplikasi BAYAR ID adalah karya skripsi yang dibuat oleh Bella, seorang mahasiswa jurusan Teknik Informatika angkatan 2015,
+        Fakultas Teknologi Informasi, Universitas Tarumanagara untuk memenuhi persyaratan mendapatkan gelar Sarjana Komputer.\n\nBella
+        dibimbing oleh dua dosen yakni dosen utama Prof Dr Ir Dyah Erny Herwindiati M.Si, dan dosen pendamping Janson Hendryli M.Kom dalam proses penyusunan.
+        \n\n<b>Sekilas Tentang Aplikasi BAYAR ID</b>:\nAplikasi ini merupakan aplikasi berjenis
+        electronic wallet atau e-wallet yang berfokus pada pembelian pulsa elektronik dengan fitur Voice Authentication.
+    </string>
+
+    <string name="layoutText">layoutText</string>
+
+    <string name="btnSubmit">Kirim</string>
+    <string name="btnRekam">Rekam</string>
+    <string name="btnUlang">Hapus</string>
+</resources>

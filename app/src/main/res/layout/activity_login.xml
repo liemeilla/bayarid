@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/pbLogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtHeaderLogin"
+        android:textColor="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/txtHeaderLogin"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:labelFor="@id/editEmail"
+        android:textColor="@color/blue_grotto"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/txtHeaderLogin"
+        android:textSize="14sp"
+        android:text="@string/txtEmail"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:autofillHints="email"
+        />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:labelFor="@id/editPassword"
+        android:textColor="@color/blue_grotto"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/editEmail"
+        android:textSize="14sp"
+        android:text="@string/txtPassword"
+        />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:autofillHints="kata sandi"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutText"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin">
+        <TextView
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/txtJudulBelumPunyaAkun"/>
+        <TextView
+            android:id="@+id/txtLinkRegister"
+            android:textColor="@color/blue_grotto"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtLinkRegister"
+            android:onClick="pindahKeRegister"
+            android:clickable="true"
+            android:textStyle=""
+            android:focusable="true" />
+    </LinearLayout>
+
+
+    <android.support.design.button.MaterialButton
+        android:id="@id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/dark_blue"
+        android:onClick="loginProcess"
+        android:text="@string/btnSubmit"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PendaftaranSuaraActivity">
+
+    <TextView
+        android:id="@+id/txtJudulDaftarSuara"
+        android:textColor="@color/blue_grotto"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/deskripsiPendaftaranSuara"/>
+
+    <TextView
+        android:id="@+id/txtJudulDaftarSuara1"
+        android:layout_below="@+id/txtJudulDaftarSuara"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/deskripsiPendaftaraSuara1"/>
+
+    <ListView
+        android:id="@+id/lstDaftarSuara"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_below="@+id/txtJudulDaftarSuara1" />
+
+    <Button
+        android:id="@+id/btnDaftarSuara"
+        android:text="Daftar Suara"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue_grotto"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        />
+
+</RelativeLayout>

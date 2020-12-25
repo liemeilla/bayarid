@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PembelianPulsaActivity">
+
+    <TextView
+        android:id="@+id/txtJenisProvider"
+        android:text="Jenis Provider"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerProvider"
+        android:layout_below="@id/txtJenisProvider"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/txtNoHp"
+        android:textStyle="bold"
+        android:text="@string/txtNoHp"
+        android:layout_below="@id/spinnerProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutNoHpBeliPulsa"
+        android:layout_below="@id/txtNoHp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtPrefixNoHp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/prefix_no_hp"/>
+        <EditText
+            android:id="@+id/editNoHpBeliPulsa"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtNominalPulsa"
+        android:textStyle="bold"
+        android:layout_below="@id/layoutNoHpBeliPulsa"
+        android:text="@string/txtNominalPulsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+    <Spinner
+        android:id="@+id/spinnerNominalPulsa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/txtNominalPulsa"/>
+
+    <android.support.design.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btnBeliPulsa"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSubmit"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/spinnerNominalPulsa"
+        app:cornerRadius="20dp"
+        />
+
+</RelativeLayout>

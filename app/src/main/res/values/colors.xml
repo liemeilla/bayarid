@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cyan">#2CEEF0</color>
+    <color name="dark_blue">#07047A</color>
+    <color name="blue_grotto">#0476D0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#54B454</color>
+    <color name="red">#d9534f</color>
+    <color name="biru_sudah">#4B0476D0</color>
+    <color name="abu_belum">#FFCACACA</color>
+</resources>

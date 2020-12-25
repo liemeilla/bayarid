@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/bayar_id"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/NopeActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VoiceAuthenticationActivity"
+            android:label="Voice Authentication" />
+        <activity android:name=".PendaftaranSuaraActivity" />
+        <activity
+            android:name=".GantiPasswordActivity"
+            android:label="Ganti Kata Sandi Akun" />
+        <activity
+            android:name=".TentangKamiActivity"
+            android:label="Tentang Pembuat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PembelianPulsaActivity"
+            android:label="Pembelian Pulsa" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".MainActivity" /> <!-- it is required if your app targets API Level 28 (Android 9.0) or above and uses the Google Maps SDK for Android 16.0.0 or below (or if your app uses the Apache HTTP Legacy library) -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

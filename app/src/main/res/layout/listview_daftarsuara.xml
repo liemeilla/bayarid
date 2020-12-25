@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layoutSatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtAngka"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/layoutSatu"
+            android:layout_marginRight="10dp"
+            android:background="#4B0476D0"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtProses"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="Belum merekam."
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRekam"
+            android:backgroundTint="@color/green"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/btnRekam"
+            android:textColor="@color/white"
+            android:enabled="true"
+             />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnUlang"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/red"
+            android:text="@string/btnUlang"
+            android:textColor="@color/white"
+            android:enabled="true"/>
+    </LinearLayout>
+</RelativeLayout>

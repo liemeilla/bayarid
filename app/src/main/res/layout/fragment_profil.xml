@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:textColor="@color/blue_grotto"
+        android:labelFor="@+id/editUpdateNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/txtNama" />
+    <EditText
+        android:id="@+id/editUpdateNama"
+        android:inputType="text"
+        android:textColor="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNama"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:textColor="@color/blue_grotto"
+        android:labelFor="@+id/editUpdateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/txtEmail"
+        android:layout_below="@+id/editUpdateNama"/>
+    <EditText
+        android:id="@+id/editUpdateEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/txtNoHp"
+        android:textColor="@color/blue_grotto"
+        android:labelFor="@+id/editUpdateNoHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/txtNoHp"
+        android:layout_below="@+id/editUpdateEmail"/>
+    <EditText
+        android:id="@+id/editUpdateNoHp"
+        android:inputType="phone"
+        android:textColor="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNoHp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutText"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUpdateNoHp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:weightSum="1.0">
+        <TextView
+            android:id="@+id/txtPassword"
+            android:textColor="@color/blue_grotto"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPassword"/>
+
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnUpdatePassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textColor="@color/blue_grotto"
+            android:text="@string/txtGantiPassword"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/blue_grotto"
+            app:strokeWidth="3dp"/>
+    </LinearLayout>
+
+    <android.support.design.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/btnSubmit"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"/>
+
+    <android.support.design.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/btnUpdateProfile"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:text="Keluar"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="3dp" />
+        />
+
+
+
+</RelativeLayout>

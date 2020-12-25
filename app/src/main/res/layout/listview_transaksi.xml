@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtPembelianPulsa"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembelian Pulsa" />
+
+    <TextView
+        android:id="@+id/txtIdTransaksi"
+        android:layout_below="@+id/txtPembelianPulsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_grotto"
+        android:textSize="14dp"
+        android:text="ID_Transaksi"/>
+
+    <TextView
+        android:id="@+id/txtNoHpBeli"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/txtIdTransaksi"
+        android:text="No Hp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layoutDeskripsiPulsa"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtNoHpBeli"
+        android:weightSum="1.0"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtProviderYangDibeli"
+            android:layout_weight="0.5"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Provider"/>
+
+        <TextView
+            android:id="@+id/txtPulsaYangDibeli"
+
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layoutDeskripsiPulsa"
+            android:layout_alignEnd="@+id/layoutDeskripsiPulsa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5"
+            android:text="Rp. 0"
+            android:textAlignment="textEnd"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/layoutDeskripsiPulsa"
+        android:layout_width="match_parent"
+        android:weightSum="1.0"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtStatusPembelian"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Status"/>
+
+        <TextView
+            android:id="@+id/txtTanggalPembelian"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="- - -"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+
+</RelativeLayout>

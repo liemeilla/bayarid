@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txtHeaderRegister"
+        android:textColor="@color/dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/txtHeaderRegister"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <!--Nama-->
+    <TextView
+        android:id="@+id/txtNama"
+        android:labelFor="@id/editNama"
+        android:textColor="@color/blue_grotto"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/txtHeaderRegister"
+        android:textSize="14sp"
+        android:text="@string/txtNama"/>
+
+    <EditText
+        android:id="@+id/editNama"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNama"
+        android:ems="10"
+        />
+
+    <!--Email-->
+    <TextView
+        android:id="@+id/txtEmail"
+        android:labelFor="@id/editEmail"
+        android:textColor="@color/blue_grotto"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/editNama"
+        android:textSize="14sp"
+        android:text="@string/txtEmail"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        />
+
+    <TextView
+        android:id="@+id/txtNoHp"
+        android:labelFor="@id/editNoHp"
+        android:textColor="@color/blue_grotto"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/editEmail"
+        android:textSize="14sp"
+        android:text="@string/txtNoHp"/>
+
+    <EditText
+        android:id="@+id/editNoHp"
+        android:inputType="phone"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNoHp"
+        />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:labelFor="@id/editPassword"
+        android:textColor="@color/blue_grotto"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/editNoHp"
+        android:textSize="14sp"
+        android:text="@string/txtPassword"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:inputType="textPassword"
+        android:ems="10"
+        />
+
+    <android.support.design.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/btnSubmit"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutText"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister">
+        <TextView
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/txtSudahPunyaAkun"/>
+
+        <TextView
+            android:id="@+id/txtLinkLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:clickable="true"
+            android:onClick="pindahKeLogin"
+            android:text="@string/txtLinkLogin"
+            android:textColor="@color/blue_grotto"
+            android:focusable="true" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

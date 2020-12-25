@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textlines"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp"
+        android:text="Selamat Datang, "
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutSaldo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textWelcome"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <TextView
+            android:id="@+id/txtSaldoTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:drawableStart="@drawable/icon_wallet_sm"
+            android:gravity="center"
+            android:text="@string/str_saldo_total"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtJumlahSaldo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="Rp."
+            android:textColor="@color/blue_grotto"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtJudulBeliPulsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutSaldo"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="Layanan"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    
+    <ImageView
+        android:id="@+id/imgBeliPulsa"
+        android:layout_below="@+id/txtJudulBeliPulsa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/img_pembelian_pulsa"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/imgTentangKami"
+        android:layout_below="@+id/imgBeliPulsa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/img_tentang_developer"
+        android:clickable="true"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>
